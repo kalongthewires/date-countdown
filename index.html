@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Date Countdown</title>
+</head>
+
+<body>
+	<dl>
+		<dt>Days until Thailand:</dt>
+		<dd id="daysUntilThailand"></dd>
+	</dl>
+
+</body>
+
+<script src="DateCountdown.js"></script>
+<script>
+	var countdown = new DateCountdown({
+		endDate: new Date(2016, 6, 25),
+		element: '#daysUntilThailand'
+	});
+
+	countdown.init();
+</script>
+
+</html>
