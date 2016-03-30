@@ -14,7 +14,7 @@ class DateCountdown {
 		let today = new Date(),
 			millisPerDay = 24 * 60 * 60 * 1000;
 
-		return Math.round(Math.abs((today - this.endDate) / millisPerDay));
+		return Math.trunc(Math.abs((today - this.endDate) / millisPerDay));
 	}
 
 	displayRemainingDays (days) {
